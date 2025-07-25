@@ -1,7 +1,7 @@
 
 
 function sendEmail() {
-    emailjs.init("nX2-eYbi2mTVw6YHi");
+    emailjs.init("MskGmjCs3vzdRIKCB");
     var name = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var mobile = document.getElementById("mobile").value;
@@ -31,8 +31,8 @@ function sendEmail() {
             mobile: mobile,
             subject: subject
         };
-        const ServiceID = "service_6z9du9p"
-        const templateID = "template_5i7hifo"
+        const ServiceID = "service_q30gyxe"
+        const templateID = "template_9hkabln"
         emailjs.send(ServiceID, templateID, params)
             .then(function (name) {
                 alert("Your message was sent successfully !")
